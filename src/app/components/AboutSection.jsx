@@ -39,7 +39,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Bacholer Of Engineering,LDRP-ITR INSITITUTE GANDHINAGAR,2022-PURSUING</li>
         <li>Diploma In Computer Engineering,Government Polytechnic Ahemdabad,2022
-          <li>10th GHSEB ,Saint Xavier's High School,GANDHINAGAR,2019</li>
+          <li>10th GHSEB ,Saint Xaviers High School,GANDHINAGAR,2019</li>
         </li>
       </ul>
     ),
@@ -72,7 +72,7 @@ const AboutSection = () => {
     <section className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16" id="about">
 
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-10 px-4 xl:gap-16 sm:py-16 xl:px-16 ">
-        <Image src="/images/about.jpg" width={400} height={400} />
+        <Image src="/images/about.jpg" width={400} height={400} alt="img" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
