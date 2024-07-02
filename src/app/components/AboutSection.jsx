@@ -37,9 +37,9 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Bacholer Of Engineering,LDRP-ITR INSITITUTE GANDHINAGAR,2022-PURSUING</li>
-        <li>Diploma In Computer Engineering,Government Polytechnic Ahemdabad,2022
-          <li>10th GHSEB ,Saint Xaviers High School,GANDHINAGAR,2019</li>
+        <li>Bacholer Of Engineering LDRP ITR INSITITUTE GANDHINAGAR 2022P URSUING</li>
+        <li>Diploma In Computer Engineering Government Polytechnic Ahemdabad 2022
+          <li>10th GHSEB Saint Xaviers High School GANDHINAGAR 2019</li>
         </li>
       </ul>
     ),
