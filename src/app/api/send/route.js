@@ -3,7 +3,7 @@ import { Resend } from "resend";
 import "@/app/components/EmailSection";
 
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY="re_M7PmPd6M_GLYd7BHEqA41qa9HC33w395h");
 const fromEmail = process.env.FROM_EMAIL;
 
 export async function POST(req, res) {
@@ -11,7 +11,7 @@ export async function POST(req, res) {
   console.log(email, subject, message);
   try {
     const data = await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'Aenal<onboarding@resend.dev>',
       to: ['aenalpatani1623@gmail.com'],
       subject: subject,
       react: (
