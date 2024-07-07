@@ -44,17 +44,17 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white"
+              className="px-6 inline-block py-3 w-full sm:w-auto rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white "
             >
               Hire Me
             </Link>
             <Link
               href="https://drive.google.com/file/d/1Lu-_QxWDzdL53K08J4cg9Ifu8OhY4Sc4/view?usp=drive_link"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+              className="px-6 py-3 inline-block w-full sm:w-auto rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white text-center"
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              
                 Download CV
-              </span>
+              
             </Link>
           </div>
         </motion.div>
@@ -68,7 +68,7 @@ const HeroSection = () => {
             <Image
               src="/images/hero.jpg"
               alt="hero image"
-              className="   w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] absolute  transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="  transform transition duration-700 ease-out hover:scale-105 w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] absolute   -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}
             />

@@ -7,62 +7,62 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Time tracking dashboard",
-    description: "Project 1 description",
-    image: "/images/project1.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Online-Resume-builder",
+    description: "I developed an online resume builder, a dynamic web application designed to streamline the resume creation process for users. Utilizing modern web technologies, the application provides a user-friendly interface for inputting personal and professional information, which is then formatted into a polished, professional resume. Key features include customizable templates, real-time previews, and easy export options in multiple formats. The project emphasizes responsive design to ensure compatibility across various devices and incorporates secure data handling to protect user information. This resume builder simplifies the job application process, empowering users to present their qualifications effectively and professionally.",
+    image: "/images/project1.png",
+    tag: ["Click here"],
+    gitUrl: "https://github.com/aenalpatani/Online-Resume-Builder.git",
+    previewUrl: "https://online-resume-builder-lyart.vercel.app/",
   },
   {
     id: 2,
-    title: "Profile Card Component",
-    description: "Project 2 description",
+    title: "Organic product Ecommerce website",
+    description: "I developed as a part of summer internship project in a team an e-commerce website for organic cosmetic products  using Next.js, Medusa, and Tailwind CSS, designed to provide an exceptional shopping experience while promoting natural and sustainable beauty. The site features a modern, responsive design powered by Tailwind CSS, ensuring seamless usability across all devices. The Next.js framework enables a highly performant and SEO-friendly frontend, while Medusa offers a robust and scalable backend for efficient product management, order processing, and customer account handling. Key features include intuitive navigation, advanced search and filter options, secure and streamlined checkout processes, and easy content management. This project combines cutting-edge technologies to deliver a sophisticated, user-centric platform that highlights the brand's commitment to quality and sustainability.",
     image: "/images/project2.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    tag: ["Click here"],
+    gitUrl: "https://github.com/special-char/she-develops-summer-internship-24.git",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "Intro section with dropdown navigation",
-    description: "Project 3 description",
+    title: "Online Quiz App",
+    description:"I developed an online quiz application using HTML, CSS, and JavaScript, designed to provide a user-friendly and engaging platform for technical assessments. The app features a clean and modern interface with a welcoming screen that invites users to select a subject from options including HTML, CSS, JavaScript, and Accessibility. Each subject is represented by an intuitive icon and a sleek, responsive button, enhancing the user experience.",
     image: "/images/project3.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["Click here"],
+    gitUrl: "https://github.com/aenalpatani/online-quiz-app.git",
+    previewUrl: "https://online-quiz-app-khaki.vercel.app/",
   },
   {
     id: 4,
-    title: "Newsletter sign-up form with success message",
-    description: "Project 4 description",
+    title: "Time track task dashboard",
+    description: "I designed a visually engaging time tracking dashboard using HTML and CSS, featuring a dark theme with vibrant, color-coded cards to represent various activity categories. Each card displays the total hours spent on an activity for the current week and compares it to the previous week's hours. The user-friendly interface includes a profile section with options to view daily, weekly, and monthly reports, allowing users to effortlessly monitor and optimize their time management.",
     image: "/images/project4.jpg",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
+    tag: ["Click here"],
+    gitUrl: "https://github.com/aenalpatani/Time-tracking-dashboard.git",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "Article preview component",
-    description: "Authentication and CRUD operations",
+    title: "Profile Card Component",
+    description: "I created a profile card component using HTML, CSS, and Flexbox, designed to display essential user information in a compact and visually appealing format. The card features a rounded profile picture at the top, followed by the user's name, age, and location. Below this information, key statistics such as the number of followers, likes, and photos are displayed, each with a distinct value and label.",
     image: "/images/project5.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    tag: ["Click here"],
+    gitUrl: "https://github.com/aenalpatani/Profile-card-compnent.git",
     previewUrl: "/",
   },
   {
     id: 6,
     title: "FAQ",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    description: "I designed a Frequently Asked Questions (FAQ) section using HTML and CSS, tailored for an organic cosmetics website. The layout features a clean and elegant design, ensuring that users can easily navigate and find answers to their common questions.",
+    image: "/images/project6.png",
+    tag: ["Click here"],
+    gitUrl: "https://github.com/special-char/she-develops-summer-internship-24.git",
+    previewUrl: "http://localhost:8000/in/FAQ",
   },
 ];
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+  const [tag, setTag] = useState("Click here");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -85,23 +85,15 @@ const ProjectsSection = () => {
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
+      
+        {/* <ProjectTag
           onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        />
+          name="Click here "
+          isSelected={tag === "Click here"}
+        /> */}
+
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 line-clamp-2">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
