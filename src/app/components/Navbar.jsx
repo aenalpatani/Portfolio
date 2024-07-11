@@ -31,7 +31,7 @@ const Navbar = () => {
     <nav className="fixed w-full top-0 z-10 bg-[#121212]">
       <div className="container mx-auto px-4 py-2 lg:py-4 flex items-center justify-between">
         <Link href={"/"} className="text-2xl md:text-xl text-white font-semibold">
-          Aenal's Portfolio
+          Aenals Portfolio
         </Link> 
         <div className="md:hidden">
           {!navbarOpen ? (
