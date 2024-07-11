@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-2 lg:py-4 flex items-center justify-between">
         <Link href={"/"} className="text-2xl md:text-xl text-white font-semibold">
           Aenal's Portfolio
-        </Link>
+        </Link> 
         <div className="md:hidden">
           {!navbarOpen ? (
             <button
