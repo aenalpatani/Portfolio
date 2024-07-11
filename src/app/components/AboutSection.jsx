@@ -27,7 +27,7 @@ const TAB_DATA = [
         <li>Communication</li>
         <li>Leadership</li>
         <li>Teamwork</li>
-        <li>TimeManagement</li>
+        <li>Time Management</li>
         <li>Public Relation</li>
       </ul>
     ),

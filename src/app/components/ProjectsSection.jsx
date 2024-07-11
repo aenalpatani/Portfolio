@@ -39,7 +39,7 @@ const projectsData = [
     image: "/images/project4.jpg",
     tag: ["Click here"],
     gitUrl: "https://github.com/aenalpatani/Time-tracking-dashboard.git",
-    previewUrl: "/",
+    previewUrl: "https://time-tracking-dashboard-blond-mu.vercel.app/",
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const projectsData = [
     image: "/images/project5.jpg",
     tag: ["Click here"],
     gitUrl: "https://github.com/aenalpatani/Profile-card-compnent.git",
-    previewUrl: "/",
+    previewUrl: "https://profile-card-compnent.vercel.app/",
   },
   {
     id: 6,
