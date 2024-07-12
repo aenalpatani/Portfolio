@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: " Technical Skills",
     id: "Technical Skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 text-white">
         <li>HTML</li>
         <li>CSS</li>
         <li>PHP</li>
@@ -23,7 +23,7 @@ const TAB_DATA = [
     title: " Additional Skills",
     id:"Additional Skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 text-white">
         <li>Communication</li>
         <li>Leadership</li>
         <li>Teamwork</li>
@@ -36,7 +36,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 text-white">
         <li>Bacholer Of Engineering LDRP ITR INSITITUTE GANDHINAGAR 2022P URSUING</li>
         <li>Diploma In Computer Engineering Government Polytechnic Ahemdabad 2022
           <li>10th GHSEB Saint Xaviers High School GANDHINAGAR 2019</li>
@@ -48,7 +48,7 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 text-white">
         <li>Certified Full Stack Developer Intern -The Special Character Company</li>
         <li>NPTEL-Database Management System Course certified</li>
         <li>GUVI-Python course Certified</li>
@@ -69,13 +69,13 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16" id="about">
+    <section className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 text-white" id="about">
 
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-10 px-4 xl:gap-16 sm:py-16 xl:px-16 ">
         <Image src="/images/about.jpg" width={400} height={400} alt="img" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg  ">
+          <p className="text-base lg:text-lg sm:text-white ">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
             working with  Node.js,Nextjs, PostgreSQL,Php
@@ -83,7 +83,7 @@ const AboutSection = () => {
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>
-          <div className="flex flex-row justify-start mt-8 gap-1">
+          <div className="flex flex-row justify-start mt-8 gap-1 sm:text-white">
             <TabButton
               selectTab={() => handleTabChange("Technical Skills")}
               active={tab === "Technical Skills"}
